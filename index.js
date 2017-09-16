@@ -12,7 +12,7 @@ function deepestChild() {
     element = next
     next = element.children[0]
   }
-  if(next === 'undefined'){
+  if(next = 'undefined'){
     return element
   }
 }
