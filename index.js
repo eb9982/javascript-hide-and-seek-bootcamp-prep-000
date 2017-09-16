@@ -12,7 +12,9 @@ function deepestChild() {
     element = next
     next = element.children[0]
   }
-  return element
+  if(next === 'undefined'){
+    return element
+  }
 }
 function increaseRankBy(n) {
   const list = document.getElementById('app').querySelectorAll('ul.ranked-list li')
